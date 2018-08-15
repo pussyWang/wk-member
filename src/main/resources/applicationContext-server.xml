@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+      http://www.springframework.org/schema/context
+      http://www.springframework.org/schema/context/spring-context-4.3.xsd
+      http://www.springframework.org/schema/context
+      http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<context:component-scan base-package="com.missfresh"/>
+	<bean id="globalFilter" class="com.demo.filter.GlobalFilter"/>
+    <!-- 统一异常处理中心 用于捕获程序中一楼未捕获的异常-->
+    <bean id="exceptionHandler" class="com.demo.common.GlobalExceptionResolver" />
+
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">  
+        <property name="order" value="2" />
+        <property name="ignoreUnresolvablePlaceholders" value="true" />
+        <property name="locations">  
+           <list>
+               <value>classpath*:wk-member-config.properties</value>
+           </list>
+        </property>
+    </bean>
+</beans>

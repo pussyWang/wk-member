@@ -43,8 +43,8 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.2</version>
 				<configuration>
-					<webappDirectory>target/coupon</webappDirectory>
-					<warName>as-member</warName>
+					<webappDirectory>target</webappDirectory>
+					<warName>wk-member</warName>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -54,7 +54,7 @@
 				<configuration>
 					<path>/</path>
 					<server>releases</server>
-					<url>http://172.16.3.99:8080/manager/html</url>
+					<url>http://localhost:8080/manager/html</url>
 					<port>8080</port>
 					<uriEncoding>UTF-8</uriEncoding>
 				</configuration>

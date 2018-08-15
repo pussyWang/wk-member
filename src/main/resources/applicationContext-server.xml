@@ -13,14 +13,4 @@
 	<bean id="globalFilter" class="com.demo.filter.GlobalFilter"/>
     <!-- 统一异常处理中心 用于捕获程序中一楼未捕获的异常-->
     <bean id="exceptionHandler" class="com.demo.common.GlobalExceptionResolver" />
-
-	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">  
-        <property name="order" value="2" />
-        <property name="ignoreUnresolvablePlaceholders" value="true" />
-        <property name="locations">  
-           <list>
-               <value>classpath*:wk-member-config.properties</value>
-           </list>
-        </property>
-    </bean>
 </beans>

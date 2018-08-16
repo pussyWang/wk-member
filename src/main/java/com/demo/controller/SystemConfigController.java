@@ -1,7 +1,7 @@
 package com.demo.controller;
 
+import com.demo.bean.ObjSet;
 import com.demo.bean.ObjVO;
-import com.demo.common.BaseAction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -13,7 +13,7 @@ import java.util.Set;
 
 @Controller
 @RequestMapping("system")
-public class SystemConfigController extends BaseAction {
+public class SystemConfigController{
     private static final Logger logger = LoggerFactory.getLogger(SystemConfigController.class);
 
     @RequestMapping("/checkServerHealth")
@@ -68,5 +68,18 @@ public class SystemConfigController extends BaseAction {
 		}
 		return objVO.show();
 	}
+
+	@RequestMapping(value = "send",method = RequestMethod.POST)
+	@ResponseBody
+	public String send(@ModelAttribute ObjSet objSet){
+    	if (objSet != null && !objSet.getObjVOS().isEmpty()){
+    		logger.info("send-->{}",objSet.getObjVOS().size());
+		}
+		for (ObjVO vo : objSet.getObjVOS()){
+    		logger.info("vo:{}",vo);
+		}
+		return "ok";
+	}
+
 
 }

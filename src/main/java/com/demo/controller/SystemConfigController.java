@@ -52,5 +52,13 @@ public class SystemConfigController extends BaseAction {
 		return map.toString();
 	}
 
+	@RequestMapping(value = "sendObject",method = RequestMethod.GET)
+	@ResponseBody
+	public String sendObj(@RequestParam Object obj){
+    	if (obj != null){
+    		logger.info("sendObj-->{}",obj);
+		}
+		return obj.toString();
+	}
 
 }

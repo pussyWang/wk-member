@@ -62,7 +62,16 @@ public class SystemConfigController{
 
 	@RequestMapping(value = "sendVO",method = RequestMethod.GET)
 	@ResponseBody
-	public String sendVO(@ModelAttribute ObjVO objVO){
+	public String sendVO(ObjVO objVO){
+		if (objVO != null){
+			logger.info("sendObj-->{}",objVO);
+		}
+		return objVO.show();
+	}
+
+	@RequestMapping(value = "postvo",method = RequestMethod.GET)
+	@ResponseBody
+	public String postvo(ObjVO objVO){
 		if (objVO != null){
 			logger.info("sendObj-->{}",objVO);
 		}

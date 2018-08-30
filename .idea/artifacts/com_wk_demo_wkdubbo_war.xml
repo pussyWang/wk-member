@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="com.wk.demo.wkdubbo:war">
+    <output-path>$PROJECT_DIR$/../wk-dubbo/target</output-path>
+    <root id="archive" name="com.wk.demo.wkdubbo.war">
+      <element id="artifact" artifact-name="com.wk.demo.wkdubbo:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,5 +1,6 @@
 package com.demo.controller;
 
+import com.demo.annotation.OperationVerify;
 import com.demo.bean.ObjSet;
 import com.demo.bean.ObjVO;
 import org.slf4j.Logger;
@@ -18,7 +19,9 @@ public class SystemConfigController{
 
     @RequestMapping("/checkServerHealth")
 	@ResponseBody
+    @OperationVerify
 	public String checkServerHealth(){
+    	logger.info("into checkServerHealth");
 		return "ok";
 	}
 

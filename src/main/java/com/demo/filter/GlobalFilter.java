@@ -32,7 +32,7 @@ public class GlobalFilter extends HttpServlet implements Filter {
         HttpServletRequest request = (HttpServletRequest) arg0;
         HttpServletResponse response = (HttpServletResponse) arg1;
         String uri = request.getRequestURI();
-        logger.info("dofilter-->{}",uri);
+        logger.info("into globalfilter:dofilter-->{}",uri);
         try {
             filterChain.doFilter(request, response);
         } catch (Exception ex) {

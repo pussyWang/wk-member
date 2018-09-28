@@ -9,6 +9,6 @@ import java.lang.annotation.Target;
  * Created by wangkang04 on 2018/9/28
  **/
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.METHOD)
+@Target(value = {ElementType.TYPE,ElementType.METHOD})
 public @interface OperationVerify {
 }

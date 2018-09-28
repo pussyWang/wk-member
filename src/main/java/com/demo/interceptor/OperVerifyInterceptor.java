@@ -3,6 +3,7 @@ package com.demo.interceptor;
 import com.demo.annotation.OperationVerify;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.core.annotation.AnnotatedElementUtils;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
@@ -21,6 +22,12 @@ public class OperVerifyInterceptor implements HandlerInterceptor{
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
 		if (handler instanceof HandlerMethod){
 			HandlerMethod h = (HandlerMethod)handler;
+			Class handleClassType = h.getBeanType();
+			/** 判断类上是否有定义该注解 **/
+			if (AnnotatedElementUtils.hasAnnotation(handleClassType,OperationVerify.class)){
+				logger.info("{} has OperationVerify",handleClassType);
+			}
+			/** 判断该方法上是否有定义该注解 **/
 			if (h.hasMethodAnnotation(OperationVerify.class)){
 				logger.info("has OperationVerify");
 			}

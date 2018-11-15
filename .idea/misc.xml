@@ -9,6 +9,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../wk-dubbo/pom.xml" />
+        <option value="$PROJECT_DIR$/../wk-dubbo-api/pom.xml" />
       </list>
     </option>
   </component>

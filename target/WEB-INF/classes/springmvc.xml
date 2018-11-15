@@ -29,7 +29,15 @@
 			</bean>
 		</mvc:message-converters>
 	</mvc:annotation-driven>
-	  <!--<bean id="customObjectMapper" class="com.missfresh.common.util.CustomObjectMapper"></bean>-->
+
+
 	<context:annotation-config />
 	<context:component-scan base-package="com.demo" />
+
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**"/>
+			<bean class="com.demo.interceptor.OperVerifyInterceptor"/>
+		</mvc:interceptor>
+	</mvc:interceptors>
 </beans>

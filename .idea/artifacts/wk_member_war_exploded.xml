@@ -60,8 +60,6 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.3" />
           <element id="library" level="project" name="Maven: commons-io:commons-io:2.4" />
           <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.29" />
-          <element id="library" level="project" name="Maven: com.mryx.grampus:grampus-ccs-rpc:1.0.1" />
-          <element id="library" level="project" name="Maven: com.mryx.grampus:grampus-ccs-domain:1.0.2" />
         </element>
       </element>
       <element id="directory" name="META-INF">

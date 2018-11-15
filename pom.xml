@@ -373,11 +373,11 @@
 			<artifactId>fastjson</artifactId>
 			<version>1.2.29</version>
 		</dependency>
-		<dependency>
-			<groupId>com.mryx.grampus</groupId>
-			<artifactId>grampus-ccs-rpc</artifactId>
-			<version>1.0.1</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>com.mryx.grampus</groupId>-->
+			<!--<artifactId>grampus-ccs-rpc</artifactId>-->
+			<!--<version>1.0.1</version>-->
+		<!--</dependency>-->
 		<!--<dependency>-->
 			<!--<groupId>com.mryx.grampus</groupId>-->
 			<!--<artifactId>grampus-ess-rpc</artifactId>-->

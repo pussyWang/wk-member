@@ -24,7 +24,7 @@
 	<dubbo:application name="wk-member-consumer" logger="slf4j"/>
 	<dubbo:protocol name="dubbo"/>
 	<!-- 使用multicast广播注册中心暴露发现服务地址 -->
-	<dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" file="/data/app/.dubbo/dubbo-registry/${project.artifactId}/dubbo-registry.properties"/>
+	<dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" file="/data/app/.dubbo/dubbo-registry/wk-member/dubbo-registry.properties"/>
 
 
 </beans>

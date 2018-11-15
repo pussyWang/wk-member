@@ -4,7 +4,7 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="com.wk.demo.wkdubbo" />
+          <element id="module-output" name="wk-dubbo" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.freemarker:freemarker:2.3.19" />
@@ -41,7 +41,7 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/../wk-dubbo/target/wk-dubbo/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="com.wk.demo.wkdubbo/web/Web" />
+      <element id="javaee-facet-resources" facet="wk-dubbo/web/Web" />
     </root>
   </artifact>
 </component>

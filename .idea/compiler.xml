@@ -8,12 +8,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="com.wk.demo.wkdubbo" />
+        <module name="wk-dubbo" />
         <module name="wk-dubbo-api" />
         <module name="wk-member" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="com.wk.demo.wkdubbo" target="1.8" />
+      <module name="wk-dubbo" target="1.8" />
       <module name="wk-dubbo-api" target="1.8" />
       <module name="wk-member" target="1.8" />
     </bytecodeTargetLevel>

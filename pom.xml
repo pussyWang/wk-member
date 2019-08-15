@@ -89,10 +89,16 @@
 			<activation>
 				<activeByDefault>true</activeByDefault>
 			</activation>
+			<properties>
+				<catalina.home>data</catalina.home>
+			</properties>
 		</profile>
 
 		<profile>
 			<id>product</id>
+			<properties>
+				<catalina.home>data</catalina.home>
+			</properties>
 		</profile>
 	</profiles>
 	<dependencyManagement>
@@ -186,43 +192,11 @@
 			<artifactId>servlet-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
-
-		<!--<dependency>-->
-			<!--<groupId>com.touclick.captcha</groupId>-->
-			<!--<artifactId>java-sdk</artifactId>-->
-			<!--<version>1.0.0</version>-->
-			<!--<exclusions>-->
-				<!--<exclusion>-->
-					<!--<groupId>org.slf4j</groupId>-->
-					<!--<artifactId>slf4j-log4j12</artifactId>-->
-				<!--</exclusion>-->
-				<!--<exclusion>-->
-					<!--<groupId>log4j</groupId>-->
-					<!--<artifactId>log4j</artifactId>-->
-				<!--</exclusion>-->
-				<!--<exclusion>-->
-					<!--<groupId>com.fasterxml.jackson.core</groupId>-->
-					<!--<artifactId>jackson-annotations</artifactId>-->
-				<!--</exclusion>-->
-				<!--<exclusion>-->
-					<!--<groupId>com.fasterxml.jackson.core</groupId>-->
-					<!--<artifactId>jackson-databind</artifactId>-->
-				<!--</exclusion>-->
-				<!--<exclusion>-->
-					<!--<groupId>com.fasterxml.jackson.core</groupId>-->
-					<!--<artifactId>jackson-core</artifactId>-->
-				<!--</exclusion>-->
-			<!--</exclusions>-->
-		<!--</dependency>-->
-
-
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
 			<version>5.2.4.Final</version>
 		</dependency>
-
-		<!-- ATP dubbo -->
 
 		<dependency>
 			<groupId>junit</groupId>
@@ -249,21 +223,6 @@
 			</exclusions>
 		</dependency>
 
-		<!--<dependency>-->
-			<!--<groupId>org.apache.zookeeper</groupId>-->
-			<!--<artifactId>zookeeper</artifactId>-->
-			<!--<version>3.4.10</version>-->
-			<!--<exclusions>-->
-				<!--<exclusion>-->
-					<!--<groupId>org.slf4j</groupId>-->
-					<!--<artifactId>slf4j-log4j12</artifactId>-->
-				<!--</exclusion>-->
-				<!--<exclusion>-->
-					<!--<groupId>log4j</groupId>-->
-					<!--<artifactId>log4j</artifactId>-->
-				<!--</exclusion>-->
-			<!--</exclusions>-->
-		<!--</dependency>-->
 		<dependency>
 			<groupId>de.ruedigermoeller</groupId>
 			<artifactId>fst</artifactId>
@@ -373,21 +332,5 @@
 			<artifactId>fastjson</artifactId>
 			<version>1.2.29</version>
 		</dependency>
-		<!--<dependency>-->
-			<!--<groupId>com.mryx.grampus</groupId>-->
-			<!--<artifactId>grampus-ccs-rpc</artifactId>-->
-			<!--<version>1.0.1</version>-->
-		<!--</dependency>-->
-		<!--<dependency>-->
-			<!--<groupId>com.mryx.grampus</groupId>-->
-			<!--<artifactId>grampus-ess-rpc</artifactId>-->
-			<!--<version>1.0.1</version>-->
-		<!--</dependency>-->
-
-		<!--<dependency>-->
-			<!--<groupId>com.mryx.grampus</groupId>-->
-			<!--<artifactId>grampus-ess</artifactId>-->
-			<!--<version>1.0.1</version>-->
-		<!--</dependency>-->
 	</dependencies>
 </project>
